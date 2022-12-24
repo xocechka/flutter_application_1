@@ -18,9 +18,7 @@ class HomePage extends StatelessWidget {
 }
 
 class _HomePageVIew extends StatelessWidget {
-  const _HomePageVIew({
-    Key? key,
-  }) : super(key: key);
+  const _HomePageVIew();
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +28,7 @@ class _HomePageVIew extends StatelessWidget {
           centerTitle: true,
         ),
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8),
           child: BlocBuilder<NotarioInfoCubit, NotarioInfoCubitState>(
             builder: (context, state) {
               return state.when(
@@ -44,15 +42,15 @@ class _HomePageVIew extends StatelessWidget {
               );
             },
           ),
-        ));
+      ),
+    );
   }
 }
 
 class _NotariosDataView extends StatelessWidget {
   const _NotariosDataView({
-    Key? key,
     required this.notariosInfo,
-  }) : super(key: key);
+  });
 
   final List<NotarioInfoEntity> notariosInfo;
 
@@ -75,13 +73,13 @@ class _NotariosDataView extends StatelessWidget {
                                             title: Text(e.text),
                                           ),
                                         )
-                                        .toList()),
+                                        .toList(),),
                               ),
                             ],
                           ),
                         )
-                        .toList()),
-              ))
+                        .toList(),),
+              ),)
           .toList(),
     );
   }
@@ -89,9 +87,8 @@ class _NotariosDataView extends StatelessWidget {
 
 class _ErrorView extends StatelessWidget {
   const _ErrorView({
-    Key? key,
     required this.failure,
-  }) : super(key: key);
+  });
 
   final Failure failure;
 
@@ -104,9 +101,7 @@ class _ErrorView extends StatelessWidget {
 }
 
 class _NoDataVIew extends StatelessWidget {
-  const _NoDataVIew({
-    Key? key,
-  }) : super(key: key);
+  const _NoDataVIew();
 
   @override
   Widget build(BuildContext context) {
@@ -117,9 +112,7 @@ class _NoDataVIew extends StatelessWidget {
 }
 
 class _LoadingIndicator extends StatelessWidget {
-  const _LoadingIndicator({
-    Key? key,
-  }) : super(key: key);
+  const _LoadingIndicator();
 
   @override
   Widget build(BuildContext context) {

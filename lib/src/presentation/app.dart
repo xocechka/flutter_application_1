@@ -3,7 +3,7 @@ import 'package:flutter_application_1/src/presentation/pages/pages.dart';
 
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {

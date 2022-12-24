@@ -1,4 +1,4 @@
-import 'package:flutter_application_1/src/data/datasources/local_data/notario_info_local.dart';
+import 'package:flutter_application_1/src/data/data_sources/local_data/notario_info_local.dart';
 import 'package:flutter_application_1/src/data/repositories/notarios_info_repository_impl.dart';
 import 'package:flutter_application_1/src/domain/repositories/repositories.dart';
 import 'package:get_it/get_it.dart';
@@ -8,12 +8,12 @@ final injector = GetIt.instance;
 
 Future<void> initializeDependencies() async {
   //SharedPreferences
-  final SharedPreferences preferences = await SharedPreferences.getInstance();
-  injector.registerLazySingleton(() => preferences);
+  final preferences = await SharedPreferences.getInstance();
 
   injector
-      .registerLazySingleton<NotarioInfoLocal>(() => NotarioInfoLocalImpl());
-
-  injector.registerLazySingleton<NotarioInfoRepository>(
-      () => NotariosInfoRepositoryImpl(injector()));
+    ..registerLazySingleton(() => preferences)
+    ..registerLazySingleton<NotarioInfoLocal>(NotarioInfoLocalImpl.new)
+    ..registerLazySingleton<NotarioInfoRepository>(
+      () => NotariosInfoRepositoryImpl(injector()),
+    );
 }

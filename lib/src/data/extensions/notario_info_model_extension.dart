@@ -6,6 +6,6 @@ extension NotarioInfoModelToEntity on NotarioInfoModel {
   NotarioInfoEntity toEntity() {
     return NotarioInfoEntity(
         notariosList:
-            notarioModels.map((notario) => notario.toEntity()).toList());
+            notarioModels.map((notario) => notario.toEntity()).toList(),);
   }
 }
