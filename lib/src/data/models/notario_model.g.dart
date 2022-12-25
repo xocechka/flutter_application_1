@@ -8,7 +8,7 @@ part of 'notario_model.dart';
 
 NotarioModel _$NotarioModelFromJson(Map<String, dynamic> json) => NotarioModel(
       id: json['id'] as String,
-      texts: (json['texts'] as List<dynamic>)
+      texts: (json['array_texto'] as List<dynamic>)
           .map((e) => TextModel.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
@@ -16,5 +16,5 @@ NotarioModel _$NotarioModelFromJson(Map<String, dynamic> json) => NotarioModel(
 Map<String, dynamic> _$NotarioModelToJson(NotarioModel instance) =>
     <String, dynamic>{
       'id': instance.id,
-      'texts': instance.texts.map((e) => e.toJson()).toList(),
+      'array_texto': instance.texts.map((e) => e.toJson()).toList(),
     };

@@ -6,6 +6,7 @@ part 'text_model.g.dart';
 class TextModel {
   TextModel({required this.text});
 
+  @JsonKey(name: 'texto')
   final String text;
 
   static TextModel fromJson(Map<String, dynamic> json) =>

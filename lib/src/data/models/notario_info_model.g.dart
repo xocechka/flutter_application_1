@@ -8,12 +8,12 @@ part of 'notario_info_model.dart';
 
 NotarioInfoModel _$NotarioInfoModelFromJson(Map<String, dynamic> json) =>
     NotarioInfoModel(
-      notarioModels: (json['notarioModels'] as List<dynamic>)
+      notariosList: (json['json_notario'] as List<dynamic>)
           .map((e) => NotarioModel.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
 Map<String, dynamic> _$NotarioInfoModelToJson(NotarioInfoModel instance) =>
     <String, dynamic>{
-      'notarioModels': instance.notarioModels.map((e) => e.toJson()).toList(),
+      'json_notario': instance.notariosList.map((e) => e.toJson()).toList(),
     };

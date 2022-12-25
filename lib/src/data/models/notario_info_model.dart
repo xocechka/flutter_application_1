@@ -6,10 +6,11 @@ part 'notario_info_model.g.dart';
 @JsonSerializable(explicitToJson: true)
 class NotarioInfoModel {
   NotarioInfoModel({
-    required this.notarioModels,
+    required this.notariosList,
   });
 
-  final List<NotarioModel> notarioModels;
+  @JsonKey(name: 'json_notario')
+  final List<NotarioModel> notariosList;
 
   static NotarioInfoModel fromJson(Map<String, dynamic> json) =>
       _$NotarioInfoModelFromJson(json);

@@ -5,7 +5,7 @@ import 'package:flutter_application_1/src/domain/entities/entities.dart';
 extension NotarioInfoModelToEntity on NotarioInfoModel {
   NotarioInfoEntity toEntity() {
     return NotarioInfoEntity(
-        notariosList:
-            notarioModels.map((notario) => notario.toEntity()).toList(),);
+      notariosList: notariosList.map((notario) => notario.toEntity()).toList(),
+    );
   }
 }

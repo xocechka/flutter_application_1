@@ -7,9 +7,9 @@ part of 'text_model.dart';
 // **************************************************************************
 
 TextModel _$TextModelFromJson(Map<String, dynamic> json) => TextModel(
-      text: json['text'] as String,
+      text: json['texto'] as String,
     );
 
 Map<String, dynamic> _$TextModelToJson(TextModel instance) => <String, dynamic>{
-      'text': instance.text,
+      'texto': instance.text,
     };
