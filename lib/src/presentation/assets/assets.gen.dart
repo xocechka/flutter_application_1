@@ -12,6 +12,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsFixturesGen {
   const $AssetsFixturesGen();
 
+  /// File path: assets/fixtures/example.json
+  String get example => 'assets/fixtures/example.json';
+
   /// File path: assets/fixtures/notario_info_model.json
   String get notarioInfoModel => 'assets/fixtures/notario_info_model.json';
 
@@ -22,7 +25,8 @@ class $AssetsFixturesGen {
   String get textModel => 'assets/fixtures/text_model.json';
 
   /// List of all assets
-  List<String> get values => [notarioInfoModel, notarioModel, textModel];
+  List<String> get values =>
+      [example, notarioInfoModel, notarioModel, textModel];
 }
 
 class Assets {
