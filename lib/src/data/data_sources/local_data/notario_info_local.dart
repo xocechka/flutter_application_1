@@ -1,18 +1,22 @@
 import 'package:flutter_application_1/src/core/utils/read_local_json.dart';
-import 'package:flutter_application_1/src/data/models/notario_info_model.dart';
+import 'package:flutter_application_1/src/data/models/models.dart';
+import 'package:flutter_application_1/src/presentation/assets/assets.gen.dart';
 
 abstract class NotarioInfoLocal {
-  Future<List<NotarioInfoModel>> getNotarioInfo();
+  Future<List<NotarioModel>> getNotarioInfo();
 }
 
 class NotarioInfoLocalImpl extends NotarioInfoLocal {
   @override
-  Future<List<NotarioInfoModel>> getNotarioInfo() async {
-    final json = await readLocalJson('assets/textos_notario.json');
+  Future<List<NotarioModel>> getNotarioInfo() async {
+    final json = await readLocalJson(Assets.textosNotario);
     final notarioInfoInJson =
-        json['info_notario'] as List<Map<String, dynamic>>;
+        json['json_notario'] as List<dynamic>;
+
     final notarioInfoList =
-        notarioInfoInJson.map(NotarioInfoModel.fromJson).toList();
+        notarioInfoInJson
+        .map((i) => NotarioModel.fromJson(i as Map<String, dynamic>))
+        .toList();
 
     return notarioInfoList;
   }
