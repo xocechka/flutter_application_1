@@ -4,6 +4,7 @@ analyzer:
   exclude:
     - "**.g.dart"
     - "**.freezed.dart"
+    - lib/src/presentation/l10n/app_localizations**
 
 linter:
   rules:
