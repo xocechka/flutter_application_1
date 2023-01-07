@@ -16,7 +16,7 @@ void main() {
   );
 
   group('toEntity', () {
-    test('should return a valid NotarioInfoEntity', () {
+    test('NotarioInfoModel', () {
       // arrange
       final jsonMap = json.decode(fixture(Assets.fixtures.notarioInfoModel))
           as Map<String, dynamic>;

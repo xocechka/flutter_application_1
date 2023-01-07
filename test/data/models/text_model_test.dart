@@ -12,7 +12,7 @@ void main() {
   const tTextEntity = TextEntity(text: 'Test Text');
 
   group('toEntity', () {
-    test('should return a valid TextEntity', () {
+    test('TextModel', () {
       // arrange
       final jsonMap = json.decode(fixture(Assets.fixtures.textModel))
           as Map<String, dynamic>;

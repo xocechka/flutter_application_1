@@ -11,7 +11,7 @@ void main() {
     dataSource = NotarioInfoLocalImpl();
   });
 
-  group('notario info local data source', () {
+  group('NotarioInfoLocalImpl', () {
     test('should return a list of notario info', () async {
       final info = await dataSource.getNotarioInfo();
 

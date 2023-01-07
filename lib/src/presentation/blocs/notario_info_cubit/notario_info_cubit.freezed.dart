@@ -19,7 +19,7 @@ mixin _$NotarioInfoCubitState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
-    required TResult Function(List<NotarioInfoEntity> data) data,
+    required TResult Function(List<NotarioEntity> data) data,
     required TResult Function() noData,
     required TResult Function(Failure error) error,
   }) =>
@@ -27,7 +27,7 @@ mixin _$NotarioInfoCubitState {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
-    TResult? Function(List<NotarioInfoEntity> data)? data,
+    TResult? Function(List<NotarioEntity> data)? data,
     TResult? Function()? noData,
     TResult? Function(Failure error)? error,
   }) =>
@@ -35,7 +35,7 @@ mixin _$NotarioInfoCubitState {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function(List<NotarioInfoEntity> data)? data,
+    TResult Function(List<NotarioEntity> data)? data,
     TResult Function()? noData,
     TResult Function(Failure error)? error,
     required TResult orElse(),
@@ -43,26 +43,26 @@ mixin _$NotarioInfoCubitState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_NotarioInfoCubitStateLoading value) loading,
-    required TResult Function(_NotarioInfoCubitStateData value) data,
-    required TResult Function(_NotarioInfoCubitStateNoData value) noData,
-    required TResult Function(_NotarioInfoCubitStateError value) error,
+    required TResult Function(_StateLoading value) loading,
+    required TResult Function(_StateData value) data,
+    required TResult Function(_StateNoData value) noData,
+    required TResult Function(_StateError value) error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_NotarioInfoCubitStateLoading value)? loading,
-    TResult? Function(_NotarioInfoCubitStateData value)? data,
-    TResult? Function(_NotarioInfoCubitStateNoData value)? noData,
-    TResult? Function(_NotarioInfoCubitStateError value)? error,
+    TResult? Function(_StateLoading value)? loading,
+    TResult? Function(_StateData value)? data,
+    TResult? Function(_StateNoData value)? noData,
+    TResult? Function(_StateError value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_NotarioInfoCubitStateLoading value)? loading,
-    TResult Function(_NotarioInfoCubitStateData value)? data,
-    TResult Function(_NotarioInfoCubitStateNoData value)? noData,
-    TResult Function(_NotarioInfoCubitStateError value)? error,
+    TResult Function(_StateLoading value)? loading,
+    TResult Function(_StateData value)? data,
+    TResult Function(_StateNoData value)? noData,
+    TResult Function(_StateError value)? error,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -88,28 +88,25 @@ class _$NotarioInfoCubitStateCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_NotarioInfoCubitStateLoadingCopyWith<$Res> {
-  factory _$$_NotarioInfoCubitStateLoadingCopyWith(
-          _$_NotarioInfoCubitStateLoading value,
-          $Res Function(_$_NotarioInfoCubitStateLoading) then) =
-      __$$_NotarioInfoCubitStateLoadingCopyWithImpl<$Res>;
+abstract class _$$_StateLoadingCopyWith<$Res> {
+  factory _$$_StateLoadingCopyWith(
+          _$_StateLoading value, $Res Function(_$_StateLoading) then) =
+      __$$_StateLoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_NotarioInfoCubitStateLoadingCopyWithImpl<$Res>
-    extends _$NotarioInfoCubitStateCopyWithImpl<$Res,
-        _$_NotarioInfoCubitStateLoading>
-    implements _$$_NotarioInfoCubitStateLoadingCopyWith<$Res> {
-  __$$_NotarioInfoCubitStateLoadingCopyWithImpl(
-      _$_NotarioInfoCubitStateLoading _value,
-      $Res Function(_$_NotarioInfoCubitStateLoading) _then)
+class __$$_StateLoadingCopyWithImpl<$Res>
+    extends _$NotarioInfoCubitStateCopyWithImpl<$Res, _$_StateLoading>
+    implements _$$_StateLoadingCopyWith<$Res> {
+  __$$_StateLoadingCopyWithImpl(
+      _$_StateLoading _value, $Res Function(_$_StateLoading) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_NotarioInfoCubitStateLoading implements _NotarioInfoCubitStateLoading {
-  const _$_NotarioInfoCubitStateLoading();
+class _$_StateLoading implements _StateLoading {
+  const _$_StateLoading();
 
   @override
   String toString() {
@@ -119,8 +116,7 @@ class _$_NotarioInfoCubitStateLoading implements _NotarioInfoCubitStateLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_NotarioInfoCubitStateLoading);
+        (other.runtimeType == runtimeType && other is _$_StateLoading);
   }
 
   @override
@@ -130,7 +126,7 @@ class _$_NotarioInfoCubitStateLoading implements _NotarioInfoCubitStateLoading {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
-    required TResult Function(List<NotarioInfoEntity> data) data,
+    required TResult Function(List<NotarioEntity> data) data,
     required TResult Function() noData,
     required TResult Function(Failure error) error,
   }) {
@@ -141,7 +137,7 @@ class _$_NotarioInfoCubitStateLoading implements _NotarioInfoCubitStateLoading {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
-    TResult? Function(List<NotarioInfoEntity> data)? data,
+    TResult? Function(List<NotarioEntity> data)? data,
     TResult? Function()? noData,
     TResult? Function(Failure error)? error,
   }) {
@@ -152,7 +148,7 @@ class _$_NotarioInfoCubitStateLoading implements _NotarioInfoCubitStateLoading {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function(List<NotarioInfoEntity> data)? data,
+    TResult Function(List<NotarioEntity> data)? data,
     TResult Function()? noData,
     TResult Function(Failure error)? error,
     required TResult orElse(),
@@ -166,10 +162,10 @@ class _$_NotarioInfoCubitStateLoading implements _NotarioInfoCubitStateLoading {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_NotarioInfoCubitStateLoading value) loading,
-    required TResult Function(_NotarioInfoCubitStateData value) data,
-    required TResult Function(_NotarioInfoCubitStateNoData value) noData,
-    required TResult Function(_NotarioInfoCubitStateError value) error,
+    required TResult Function(_StateLoading value) loading,
+    required TResult Function(_StateData value) data,
+    required TResult Function(_StateNoData value) noData,
+    required TResult Function(_StateError value) error,
   }) {
     return loading(this);
   }
@@ -177,10 +173,10 @@ class _$_NotarioInfoCubitStateLoading implements _NotarioInfoCubitStateLoading {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_NotarioInfoCubitStateLoading value)? loading,
-    TResult? Function(_NotarioInfoCubitStateData value)? data,
-    TResult? Function(_NotarioInfoCubitStateNoData value)? noData,
-    TResult? Function(_NotarioInfoCubitStateError value)? error,
+    TResult? Function(_StateLoading value)? loading,
+    TResult? Function(_StateData value)? data,
+    TResult? Function(_StateNoData value)? noData,
+    TResult? Function(_StateError value)? error,
   }) {
     return loading?.call(this);
   }
@@ -188,10 +184,10 @@ class _$_NotarioInfoCubitStateLoading implements _NotarioInfoCubitStateLoading {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_NotarioInfoCubitStateLoading value)? loading,
-    TResult Function(_NotarioInfoCubitStateData value)? data,
-    TResult Function(_NotarioInfoCubitStateNoData value)? noData,
-    TResult Function(_NotarioInfoCubitStateError value)? error,
+    TResult Function(_StateLoading value)? loading,
+    TResult Function(_StateData value)? data,
+    TResult Function(_StateNoData value)? noData,
+    TResult Function(_StateError value)? error,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -201,29 +197,25 @@ class _$_NotarioInfoCubitStateLoading implements _NotarioInfoCubitStateLoading {
   }
 }
 
-abstract class _NotarioInfoCubitStateLoading implements NotarioInfoCubitState {
-  const factory _NotarioInfoCubitStateLoading() =
-      _$_NotarioInfoCubitStateLoading;
+abstract class _StateLoading implements NotarioInfoCubitState {
+  const factory _StateLoading() = _$_StateLoading;
 }
 
 /// @nodoc
-abstract class _$$_NotarioInfoCubitStateDataCopyWith<$Res> {
-  factory _$$_NotarioInfoCubitStateDataCopyWith(
-          _$_NotarioInfoCubitStateData value,
-          $Res Function(_$_NotarioInfoCubitStateData) then) =
-      __$$_NotarioInfoCubitStateDataCopyWithImpl<$Res>;
+abstract class _$$_StateDataCopyWith<$Res> {
+  factory _$$_StateDataCopyWith(
+          _$_StateData value, $Res Function(_$_StateData) then) =
+      __$$_StateDataCopyWithImpl<$Res>;
   @useResult
-  $Res call({List<NotarioInfoEntity> data});
+  $Res call({List<NotarioEntity> data});
 }
 
 /// @nodoc
-class __$$_NotarioInfoCubitStateDataCopyWithImpl<$Res>
-    extends _$NotarioInfoCubitStateCopyWithImpl<$Res,
-        _$_NotarioInfoCubitStateData>
-    implements _$$_NotarioInfoCubitStateDataCopyWith<$Res> {
-  __$$_NotarioInfoCubitStateDataCopyWithImpl(
-      _$_NotarioInfoCubitStateData _value,
-      $Res Function(_$_NotarioInfoCubitStateData) _then)
+class __$$_StateDataCopyWithImpl<$Res>
+    extends _$NotarioInfoCubitStateCopyWithImpl<$Res, _$_StateData>
+    implements _$$_StateDataCopyWith<$Res> {
+  __$$_StateDataCopyWithImpl(
+      _$_StateData _value, $Res Function(_$_StateData) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -231,24 +223,23 @@ class __$$_NotarioInfoCubitStateDataCopyWithImpl<$Res>
   $Res call({
     Object? data = null,
   }) {
-    return _then(_$_NotarioInfoCubitStateData(
+    return _then(_$_StateData(
       null == data
           ? _value._data
           : data // ignore: cast_nullable_to_non_nullable
-              as List<NotarioInfoEntity>,
+              as List<NotarioEntity>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$_NotarioInfoCubitStateData implements _NotarioInfoCubitStateData {
-  const _$_NotarioInfoCubitStateData(final List<NotarioInfoEntity> data)
-      : _data = data;
+class _$_StateData implements _StateData {
+  const _$_StateData(final List<NotarioEntity> data) : _data = data;
 
-  final List<NotarioInfoEntity> _data;
+  final List<NotarioEntity> _data;
   @override
-  List<NotarioInfoEntity> get data {
+  List<NotarioEntity> get data {
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_data);
   }
@@ -262,7 +253,7 @@ class _$_NotarioInfoCubitStateData implements _NotarioInfoCubitStateData {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_NotarioInfoCubitStateData &&
+            other is _$_StateData &&
             const DeepCollectionEquality().equals(other._data, _data));
   }
 
@@ -273,15 +264,14 @@ class _$_NotarioInfoCubitStateData implements _NotarioInfoCubitStateData {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_NotarioInfoCubitStateDataCopyWith<_$_NotarioInfoCubitStateData>
-      get copyWith => __$$_NotarioInfoCubitStateDataCopyWithImpl<
-          _$_NotarioInfoCubitStateData>(this, _$identity);
+  _$$_StateDataCopyWith<_$_StateData> get copyWith =>
+      __$$_StateDataCopyWithImpl<_$_StateData>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
-    required TResult Function(List<NotarioInfoEntity> data) data,
+    required TResult Function(List<NotarioEntity> data) data,
     required TResult Function() noData,
     required TResult Function(Failure error) error,
   }) {
@@ -292,7 +282,7 @@ class _$_NotarioInfoCubitStateData implements _NotarioInfoCubitStateData {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
-    TResult? Function(List<NotarioInfoEntity> data)? data,
+    TResult? Function(List<NotarioEntity> data)? data,
     TResult? Function()? noData,
     TResult? Function(Failure error)? error,
   }) {
@@ -303,7 +293,7 @@ class _$_NotarioInfoCubitStateData implements _NotarioInfoCubitStateData {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function(List<NotarioInfoEntity> data)? data,
+    TResult Function(List<NotarioEntity> data)? data,
     TResult Function()? noData,
     TResult Function(Failure error)? error,
     required TResult orElse(),
@@ -317,10 +307,10 @@ class _$_NotarioInfoCubitStateData implements _NotarioInfoCubitStateData {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_NotarioInfoCubitStateLoading value) loading,
-    required TResult Function(_NotarioInfoCubitStateData value) data,
-    required TResult Function(_NotarioInfoCubitStateNoData value) noData,
-    required TResult Function(_NotarioInfoCubitStateError value) error,
+    required TResult Function(_StateLoading value) loading,
+    required TResult Function(_StateData value) data,
+    required TResult Function(_StateNoData value) noData,
+    required TResult Function(_StateError value) error,
   }) {
     return data(this);
   }
@@ -328,10 +318,10 @@ class _$_NotarioInfoCubitStateData implements _NotarioInfoCubitStateData {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_NotarioInfoCubitStateLoading value)? loading,
-    TResult? Function(_NotarioInfoCubitStateData value)? data,
-    TResult? Function(_NotarioInfoCubitStateNoData value)? noData,
-    TResult? Function(_NotarioInfoCubitStateError value)? error,
+    TResult? Function(_StateLoading value)? loading,
+    TResult? Function(_StateData value)? data,
+    TResult? Function(_StateNoData value)? noData,
+    TResult? Function(_StateError value)? error,
   }) {
     return data?.call(this);
   }
@@ -339,10 +329,10 @@ class _$_NotarioInfoCubitStateData implements _NotarioInfoCubitStateData {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_NotarioInfoCubitStateLoading value)? loading,
-    TResult Function(_NotarioInfoCubitStateData value)? data,
-    TResult Function(_NotarioInfoCubitStateNoData value)? noData,
-    TResult Function(_NotarioInfoCubitStateError value)? error,
+    TResult Function(_StateLoading value)? loading,
+    TResult Function(_StateData value)? data,
+    TResult Function(_StateNoData value)? noData,
+    TResult Function(_StateError value)? error,
     required TResult orElse(),
   }) {
     if (data != null) {
@@ -352,39 +342,35 @@ class _$_NotarioInfoCubitStateData implements _NotarioInfoCubitStateData {
   }
 }
 
-abstract class _NotarioInfoCubitStateData implements NotarioInfoCubitState {
-  const factory _NotarioInfoCubitStateData(final List<NotarioInfoEntity> data) =
-      _$_NotarioInfoCubitStateData;
+abstract class _StateData implements NotarioInfoCubitState {
+  const factory _StateData(final List<NotarioEntity> data) = _$_StateData;
 
-  List<NotarioInfoEntity> get data;
+  List<NotarioEntity> get data;
   @JsonKey(ignore: true)
-  _$$_NotarioInfoCubitStateDataCopyWith<_$_NotarioInfoCubitStateData>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$_StateDataCopyWith<_$_StateData> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_NotarioInfoCubitStateNoDataCopyWith<$Res> {
-  factory _$$_NotarioInfoCubitStateNoDataCopyWith(
-          _$_NotarioInfoCubitStateNoData value,
-          $Res Function(_$_NotarioInfoCubitStateNoData) then) =
-      __$$_NotarioInfoCubitStateNoDataCopyWithImpl<$Res>;
+abstract class _$$_StateNoDataCopyWith<$Res> {
+  factory _$$_StateNoDataCopyWith(
+          _$_StateNoData value, $Res Function(_$_StateNoData) then) =
+      __$$_StateNoDataCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_NotarioInfoCubitStateNoDataCopyWithImpl<$Res>
-    extends _$NotarioInfoCubitStateCopyWithImpl<$Res,
-        _$_NotarioInfoCubitStateNoData>
-    implements _$$_NotarioInfoCubitStateNoDataCopyWith<$Res> {
-  __$$_NotarioInfoCubitStateNoDataCopyWithImpl(
-      _$_NotarioInfoCubitStateNoData _value,
-      $Res Function(_$_NotarioInfoCubitStateNoData) _then)
+class __$$_StateNoDataCopyWithImpl<$Res>
+    extends _$NotarioInfoCubitStateCopyWithImpl<$Res, _$_StateNoData>
+    implements _$$_StateNoDataCopyWith<$Res> {
+  __$$_StateNoDataCopyWithImpl(
+      _$_StateNoData _value, $Res Function(_$_StateNoData) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_NotarioInfoCubitStateNoData implements _NotarioInfoCubitStateNoData {
-  const _$_NotarioInfoCubitStateNoData();
+class _$_StateNoData implements _StateNoData {
+  const _$_StateNoData();
 
   @override
   String toString() {
@@ -394,8 +380,7 @@ class _$_NotarioInfoCubitStateNoData implements _NotarioInfoCubitStateNoData {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_NotarioInfoCubitStateNoData);
+        (other.runtimeType == runtimeType && other is _$_StateNoData);
   }
 
   @override
@@ -405,7 +390,7 @@ class _$_NotarioInfoCubitStateNoData implements _NotarioInfoCubitStateNoData {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
-    required TResult Function(List<NotarioInfoEntity> data) data,
+    required TResult Function(List<NotarioEntity> data) data,
     required TResult Function() noData,
     required TResult Function(Failure error) error,
   }) {
@@ -416,7 +401,7 @@ class _$_NotarioInfoCubitStateNoData implements _NotarioInfoCubitStateNoData {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
-    TResult? Function(List<NotarioInfoEntity> data)? data,
+    TResult? Function(List<NotarioEntity> data)? data,
     TResult? Function()? noData,
     TResult? Function(Failure error)? error,
   }) {
@@ -427,7 +412,7 @@ class _$_NotarioInfoCubitStateNoData implements _NotarioInfoCubitStateNoData {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function(List<NotarioInfoEntity> data)? data,
+    TResult Function(List<NotarioEntity> data)? data,
     TResult Function()? noData,
     TResult Function(Failure error)? error,
     required TResult orElse(),
@@ -441,10 +426,10 @@ class _$_NotarioInfoCubitStateNoData implements _NotarioInfoCubitStateNoData {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_NotarioInfoCubitStateLoading value) loading,
-    required TResult Function(_NotarioInfoCubitStateData value) data,
-    required TResult Function(_NotarioInfoCubitStateNoData value) noData,
-    required TResult Function(_NotarioInfoCubitStateError value) error,
+    required TResult Function(_StateLoading value) loading,
+    required TResult Function(_StateData value) data,
+    required TResult Function(_StateNoData value) noData,
+    required TResult Function(_StateError value) error,
   }) {
     return noData(this);
   }
@@ -452,10 +437,10 @@ class _$_NotarioInfoCubitStateNoData implements _NotarioInfoCubitStateNoData {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_NotarioInfoCubitStateLoading value)? loading,
-    TResult? Function(_NotarioInfoCubitStateData value)? data,
-    TResult? Function(_NotarioInfoCubitStateNoData value)? noData,
-    TResult? Function(_NotarioInfoCubitStateError value)? error,
+    TResult? Function(_StateLoading value)? loading,
+    TResult? Function(_StateData value)? data,
+    TResult? Function(_StateNoData value)? noData,
+    TResult? Function(_StateError value)? error,
   }) {
     return noData?.call(this);
   }
@@ -463,10 +448,10 @@ class _$_NotarioInfoCubitStateNoData implements _NotarioInfoCubitStateNoData {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_NotarioInfoCubitStateLoading value)? loading,
-    TResult Function(_NotarioInfoCubitStateData value)? data,
-    TResult Function(_NotarioInfoCubitStateNoData value)? noData,
-    TResult Function(_NotarioInfoCubitStateError value)? error,
+    TResult Function(_StateLoading value)? loading,
+    TResult Function(_StateData value)? data,
+    TResult Function(_StateNoData value)? noData,
+    TResult Function(_StateError value)? error,
     required TResult orElse(),
   }) {
     if (noData != null) {
@@ -476,28 +461,25 @@ class _$_NotarioInfoCubitStateNoData implements _NotarioInfoCubitStateNoData {
   }
 }
 
-abstract class _NotarioInfoCubitStateNoData implements NotarioInfoCubitState {
-  const factory _NotarioInfoCubitStateNoData() = _$_NotarioInfoCubitStateNoData;
+abstract class _StateNoData implements NotarioInfoCubitState {
+  const factory _StateNoData() = _$_StateNoData;
 }
 
 /// @nodoc
-abstract class _$$_NotarioInfoCubitStateErrorCopyWith<$Res> {
-  factory _$$_NotarioInfoCubitStateErrorCopyWith(
-          _$_NotarioInfoCubitStateError value,
-          $Res Function(_$_NotarioInfoCubitStateError) then) =
-      __$$_NotarioInfoCubitStateErrorCopyWithImpl<$Res>;
+abstract class _$$_StateErrorCopyWith<$Res> {
+  factory _$$_StateErrorCopyWith(
+          _$_StateError value, $Res Function(_$_StateError) then) =
+      __$$_StateErrorCopyWithImpl<$Res>;
   @useResult
   $Res call({Failure error});
 }
 
 /// @nodoc
-class __$$_NotarioInfoCubitStateErrorCopyWithImpl<$Res>
-    extends _$NotarioInfoCubitStateCopyWithImpl<$Res,
-        _$_NotarioInfoCubitStateError>
-    implements _$$_NotarioInfoCubitStateErrorCopyWith<$Res> {
-  __$$_NotarioInfoCubitStateErrorCopyWithImpl(
-      _$_NotarioInfoCubitStateError _value,
-      $Res Function(_$_NotarioInfoCubitStateError) _then)
+class __$$_StateErrorCopyWithImpl<$Res>
+    extends _$NotarioInfoCubitStateCopyWithImpl<$Res, _$_StateError>
+    implements _$$_StateErrorCopyWith<$Res> {
+  __$$_StateErrorCopyWithImpl(
+      _$_StateError _value, $Res Function(_$_StateError) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -505,7 +487,7 @@ class __$$_NotarioInfoCubitStateErrorCopyWithImpl<$Res>
   $Res call({
     Object? error = null,
   }) {
-    return _then(_$_NotarioInfoCubitStateError(
+    return _then(_$_StateError(
       null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -516,8 +498,8 @@ class __$$_NotarioInfoCubitStateErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_NotarioInfoCubitStateError implements _NotarioInfoCubitStateError {
-  const _$_NotarioInfoCubitStateError(this.error);
+class _$_StateError implements _StateError {
+  const _$_StateError(this.error);
 
   @override
   final Failure error;
@@ -531,7 +513,7 @@ class _$_NotarioInfoCubitStateError implements _NotarioInfoCubitStateError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_NotarioInfoCubitStateError &&
+            other is _$_StateError &&
             (identical(other.error, error) || other.error == error));
   }
 
@@ -541,15 +523,14 @@ class _$_NotarioInfoCubitStateError implements _NotarioInfoCubitStateError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_NotarioInfoCubitStateErrorCopyWith<_$_NotarioInfoCubitStateError>
-      get copyWith => __$$_NotarioInfoCubitStateErrorCopyWithImpl<
-          _$_NotarioInfoCubitStateError>(this, _$identity);
+  _$$_StateErrorCopyWith<_$_StateError> get copyWith =>
+      __$$_StateErrorCopyWithImpl<_$_StateError>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
-    required TResult Function(List<NotarioInfoEntity> data) data,
+    required TResult Function(List<NotarioEntity> data) data,
     required TResult Function() noData,
     required TResult Function(Failure error) error,
   }) {
@@ -560,7 +541,7 @@ class _$_NotarioInfoCubitStateError implements _NotarioInfoCubitStateError {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
-    TResult? Function(List<NotarioInfoEntity> data)? data,
+    TResult? Function(List<NotarioEntity> data)? data,
     TResult? Function()? noData,
     TResult? Function(Failure error)? error,
   }) {
@@ -571,7 +552,7 @@ class _$_NotarioInfoCubitStateError implements _NotarioInfoCubitStateError {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
-    TResult Function(List<NotarioInfoEntity> data)? data,
+    TResult Function(List<NotarioEntity> data)? data,
     TResult Function()? noData,
     TResult Function(Failure error)? error,
     required TResult orElse(),
@@ -585,10 +566,10 @@ class _$_NotarioInfoCubitStateError implements _NotarioInfoCubitStateError {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_NotarioInfoCubitStateLoading value) loading,
-    required TResult Function(_NotarioInfoCubitStateData value) data,
-    required TResult Function(_NotarioInfoCubitStateNoData value) noData,
-    required TResult Function(_NotarioInfoCubitStateError value) error,
+    required TResult Function(_StateLoading value) loading,
+    required TResult Function(_StateData value) data,
+    required TResult Function(_StateNoData value) noData,
+    required TResult Function(_StateError value) error,
   }) {
     return error(this);
   }
@@ -596,10 +577,10 @@ class _$_NotarioInfoCubitStateError implements _NotarioInfoCubitStateError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_NotarioInfoCubitStateLoading value)? loading,
-    TResult? Function(_NotarioInfoCubitStateData value)? data,
-    TResult? Function(_NotarioInfoCubitStateNoData value)? noData,
-    TResult? Function(_NotarioInfoCubitStateError value)? error,
+    TResult? Function(_StateLoading value)? loading,
+    TResult? Function(_StateData value)? data,
+    TResult? Function(_StateNoData value)? noData,
+    TResult? Function(_StateError value)? error,
   }) {
     return error?.call(this);
   }
@@ -607,10 +588,10 @@ class _$_NotarioInfoCubitStateError implements _NotarioInfoCubitStateError {
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_NotarioInfoCubitStateLoading value)? loading,
-    TResult Function(_NotarioInfoCubitStateData value)? data,
-    TResult Function(_NotarioInfoCubitStateNoData value)? noData,
-    TResult Function(_NotarioInfoCubitStateError value)? error,
+    TResult Function(_StateLoading value)? loading,
+    TResult Function(_StateData value)? data,
+    TResult Function(_StateNoData value)? noData,
+    TResult Function(_StateError value)? error,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -620,12 +601,11 @@ class _$_NotarioInfoCubitStateError implements _NotarioInfoCubitStateError {
   }
 }
 
-abstract class _NotarioInfoCubitStateError implements NotarioInfoCubitState {
-  const factory _NotarioInfoCubitStateError(final Failure error) =
-      _$_NotarioInfoCubitStateError;
+abstract class _StateError implements NotarioInfoCubitState {
+  const factory _StateError(final Failure error) = _$_StateError;
 
   Failure get error;
   @JsonKey(ignore: true)
-  _$$_NotarioInfoCubitStateErrorCopyWith<_$_NotarioInfoCubitStateError>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$_StateErrorCopyWith<_$_StateError> get copyWith =>
+      throw _privateConstructorUsedError;
 }

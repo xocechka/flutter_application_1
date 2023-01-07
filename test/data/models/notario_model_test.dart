@@ -14,7 +14,7 @@ void main() {
     texts: [TextEntity(text: 'Test Text')],
   );
   group('toEntity', () {
-    test('should return a valid NotarioEntity', () {
+    test('NotarioModel', () {
       // arrange
       final jsonMap = json.decode(fixture(Assets.fixtures.notarioModel))
           as Map<String, dynamic>;

@@ -17,7 +17,5 @@ void main() {
       expect(parsedData['age'], 23);
       expect(parsedData['isSenior'], false);
     });
-
-
   });
 }
